@@ -24,7 +24,95 @@
 
     <h2>WCAG</h2>
 
-    <p></p>
+    <h3>Text Alternatives</h3>
+    <a href="https://www.w3.org/TR/WCAG21/#text-alternatives">Definitions</a>
+
+    <p>Basically means that if there is an image, chart, video, or other objects that are not defined by text, they will
+        need
+        an alternative description (to be read out on screen readers).
+    </p>
+    <dl>
+        <dt>All non-text content</dt>
+        <dd>A <strong>text description</strong>.</dd>
+        <dt>Control</dt>
+        <dd>Form Fields / User Inputs</dd>
+        <dd>These should have a <strong>name</strong> description.</dd>
+        <dt>Timebased Media</dt>
+        <dd>Video, Slides, Film or Audio</dd>
+        <dd>These should have a <strong>descriptive specification</strong>. A <strong>title</strong> is also a nice
+            addition.</dd>
+        <dt>Live Timebased Media</dt>
+        <dt>Live: Stream, Television, Podcast, Radio</dt>
+        <dd>These should have an <strong>alternative text</strong> in a label.</dd>
+        <dt>Test</dt>
+        <dd>Test, Quiz, Exercise</dd>
+        <dd>If the element would be invalid when presented in text, these should have an <strong>alternative text
+                description</strong>.</dd>
+        <dt>Sensory</dt>
+        <dd>Symphony performance, works of art, etc.</dd>
+        <dd>These should have an <strong>alternative text description</strong>.</dd>
+        <dt>CAPTCHA</dt>
+        <dd>User validation to confurm the content is accessed by a person rather than a computer.</dd>
+        <dd>These should have an <strong>alternative text description</strong> that identifies and describes the
+            purpose, and alternative forms of CAPTCHA using output modes for different types of sensory perception to
+            accommodate
+            different disabilities.</dd>
+        <dt>Decoration</dt>
+        <dd>If the content is purely decorative, not visible, hidden or disabled.</dd>
+        <dd>These have to be able to be <strong>ignored</strong> by assisstive technology.</dd>
+    </dl>
+
+    <h3>Adaptable Content</h3>
+
+    <p>Create content that can be displayed in several ways, without losing information.
+        Basically, good semantics and usage of titles and labels will achieve this. Also, there shouldn't be a
+        restriction of the viewport,
+        and content should be available in both portrait and landscape mode, and not require the user to switch between
+        these orientations to
+        access certain elements.
+        Using the autofill tokens in input fields is also preferrable.
+        Using ARIA landmarks to identify regions of a page.
+    </p>
+
+    <p><strong>Example: </strong>A required field in form is displayed with a red outline, an asterisk, and an icon with
+        a label
+        that reads "required".</p>
+
+    <p><strong>Example: </strong>A website uses a multi-column lay-out, though in the HTML the content is provided in
+        linear order,
+        that is easily understandable for assisstive technology to navigate.</p>
+
+    <h3>Distinguishable</h3>
+
+    <p>Make it easier for users to see and hear content including separating foreground from background.</p>
+
+    <p>General guidelines are:</p>
+
+    <ol>
+        <li>Do not use color indicators for conveying information, indicating an action, prompting a response, or
+            distinguishing a visual element.</li>
+        <li>Do not auto-play audio, unless there is a mechanism is available to pause or stop the audio, or a
+            mechanism is available to control audio volume independently from the overall system volume level.</li>
+        <li>A contrast ratio of at least 4.5:1, except for large text (3:1), inactive or decorative items (none),
+            logotype (none).</li>
+        <li>An enhanced contrast ratio of at least 7:1, except for large text (4.5:1), inactive or decorative items
+            (none), logotype (none).</li>
+        <li>Text should be resizable, without loss of content. The usage of "rem" and percentages is helpful for this.
+        </li>
+        <li>Present text as images rather than images as text, and make this text fully customizable.</li>
+        <li>Audio does not have background-noise unless this is less than 20 dB.</li>
+        <li>Blocks of text must have colors that can be picked by user, a maximum width of 80 characters, text is not justified,
+            line-spacing is at least 1.5 spaces, and paragraph spacing is at least 1.5 times bigger than the line-spacing, text is 
+            resizable up to 200% without needing to scroll horizontal.
+        </li>
+        <li>Images of text are purely decorative, or where the visual presentation is essential.</li>
+        <li>Vertical scrolling should be a minimum width of 320 pixels, and horizontal scrolling a minimum height of 256 pixels.</li>
+        <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">Non-text Contrast</a> of at least 3:1.</li>
+        <li>Text should have the following properties in CSS: line-height / line-spacing of at least 1.5 times the font-size,
+            spacing following paragrahps at least 2 times the font-size, letter spacing of at least 0.12 times the font-size,
+            word-spacing at least 0.16 times the font-size.
+        </li>
+    </ol>
 
     <h2>UAAG</h2>
 
